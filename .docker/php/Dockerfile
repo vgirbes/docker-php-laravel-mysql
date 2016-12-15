@@ -39,6 +39,11 @@ RUN mv phpunit.phar /usr/local/bin/phpunit
 
 WORKDIR /var/www/bdd
 
+#Laravel App Installation
+RUN /usr/local/bin/composer create-project laravel/laravel /var/www/bdd/ --prefer-dist
+RUN chmod -R 777 /var/www/bdd/storage
+RUN chmod -R 777 /var/www/bdd/bootstrap/cache
+
 #port
 EXPOSE 80
 

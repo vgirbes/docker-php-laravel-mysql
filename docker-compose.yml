@@ -11,6 +11,8 @@ services:
     volumes :
       - ./src:/var/www/bdd
       - /var/www/bdd/vendor
+      - /var/www/bdd/storage
+      - /var/www/bdd/bootstrap
   mysql:
     build:
       context: .
