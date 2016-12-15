@@ -1,7 +1,7 @@
 # docker-php-laravel-mysql
 Docker installation ready to use Laravel.
 
-If the Laravel aplication isn't installed, please follow this:
+If Laravel aplication isn't installed, please follow this:
 ```
 docker exec -it laravel_app_1 bash
 
